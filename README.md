@@ -13,4 +13,4 @@
 
 **Result**
 
-- [DEMO LINK](https://olesyamogil.github.io/js_all_counted-DOM/)
+- [DEMO LINK](https://olesyamogil.github.io/js_all-is-counted-DOM/)
