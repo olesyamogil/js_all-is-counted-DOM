@@ -1,11 +1,12 @@
 'use strict';
-const span = document.querySelector('.times');
+const span = document.getElementById('times');
 
-let timesClicked = sessionStorage.getItem('timesClicked') || 0;
+const cookieKey = 'timesClicked';
+let timesClicked = sessionStorage.getItem(cookieKey) || 0;
 span.textContent = timesClicked;
 
 document.body.addEventListener('click', () => {
   timesClicked++;
-  sessionStorage.setItem('timesClicked', timesClicked);
+  sessionStorage.setItem(cookieKey, timesClicked);
   span.textContent = timesClicked;
 });
