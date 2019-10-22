@@ -1,3 +1,11 @@
 'use strict';
+const span = document.querySelector('.times');
 
-console.log('hello mate academy!');
+let timesClicked = sessionStorage.getItem('timesClicked') || 0;
+span.textContent = timesClicked;
+
+document.body.addEventListener('click', () => {
+  timesClicked++;
+  sessionStorage.setItem('timesClicked', timesClicked);
+  span.textContent = timesClicked;
+});
